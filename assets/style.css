@@ -43,23 +43,24 @@
   }
 
   a {
-      color:rgb(170, 147, 98);
-      background:rgb(17, 17, 17);
-      border-radius: 1rem;
-      padding: 0.65rem 0.75rem 0.35rem 0.75rem;
-      text-decoration-line: none;
       font-variation-settings: "wght" 700;
-      border:rgb(17, 17, 17) solid 3px;
+      color:rgb(17, 17, 17);
+      text-decoration-line: none;
+  }
+
+  a:hover {
+    color:rgb(238, 214, 3);
   }
 
   .blob {
     border-radius: 1rem;
+    padding: 0.65rem 0.75rem 0.35rem 0.75rem;
     border:rgb(17, 17, 17) solid 3px;
     font-variation-settings: "wght" 700;
     padding: 0.65rem 0.75rem 0.35rem 0.75rem;
   }
 
-  a:hover {
+  a.blob:hover {
       background: rgb(238, 214, 3);
       color: black;
   }
