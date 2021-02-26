@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Monobloc-Variable";
+    src: url("monoblocvariable.ttf") format("truetype-variations");
+  }
+
+  @font-face {
+    font-family: 'Fluoral-Bar';
+    src:    url('Fluoral-Bar.woff') format('woff'),
+            url('Fluoral-Bar.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  :root {
+    font-family: "Monobloc-Variable";
+    font-variation-settings: "wght" 400;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background: rgb(170, 147, 98);
+    color: rgb(17, 17, 17);
+    font-size: 1.5rem;
+  }
+
+
+  h1 {
+      padding: 0;
+      margin: 0;
+      font-size: 8vw;
+      line-height: 8vw;
+  }
+
+  h2 {
+      font-family: "Fluoral-Bar";
+      font-size: 8vw;
+      line-height: 8vw;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-variation-settings: "wght" 700;
+  }
+
+  a {
+      color:rgb(170, 147, 98);
+      background:rgb(17, 17, 17);
+      border-radius: 1rem;
+      padding: 0.65rem 0.75rem 0.35rem 0.75rem;
+      text-decoration-line: none;
+      font-variation-settings: "wght" 700;
+      border:rgb(17, 17, 17) solid 3px;
+  }
+
+  .blob {
+    border-radius: 1rem;
+    border:rgb(17, 17, 17) solid 3px;
+    font-variation-settings: "wght" 700;
+    padding: 0.65rem 0.75rem 0.35rem 0.75rem;
+  }
+
+  a:hover {
+      background: rgb(238, 214, 3);
+      color: black;
+  }
+
+  p {
+      font-size:1rem;
+  }
+
+  section{
+      padding: 1rem;
+  }
+
+  div {
+
+      padding: 0;
+      margin: 0;
+  }
+
+  .bottombar {
+      position: fixed;
+      display: flex;
+      bottom: 0;
+      left:0;
+      color:rgb(170, 147, 98);
+      background: rgb(17, 17, 17);
+      width: 100%;
+      padding: 10px;
+  }
+
+  .absolute {
+      position: absolute;
+      z-index: 10;
+  }
+
+  .exercise {
+      background:rgb(224, 213, 190);
+      color:rgb(17, 17, 17);
+  }
+
+  .projects {
+    background: rgb(226, 123, 5);
+    color:rgb(17, 17, 17);
+  }
+
+  ::selection {
+    background:rgb(17, 17, 17);
+    color:rgb(224, 213, 190);
+  }
+
+
+
+  
