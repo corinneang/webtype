@@ -51,6 +51,7 @@
       font-family: "chancery";
       -webkit-font-smoothing: antialiased;
       font-size: 1.8rem;
+      line-height: 2rem;
   }
 
   h2 {
@@ -150,6 +151,15 @@
     z-index: 10;
 }
 
+.blackbckg {
+    background: black;
+    color:rgb(255, 208, 243);
+}
+
+.blackbckg a {
+    color:rgb(255, 208, 243);
+}
+
 .blackbutton {
     background: black;
     color: rgb(255, 208, 243);
@@ -157,13 +167,27 @@
  
 .contentbox {
     max-width: 500px;
-    min-width: 300px;
+    min-width: 400px;
     border: 2px solid black;
     position: absolute;
+    padding: 0;
+}
+
+.stacking {
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+
+.event {
+    background:rgb(247, 247, 247);
+}
+
+.eventheader {
+    font-variation-settings: "wght" 900;
 }
 
 .corinne {
-    background: rgb(112, 160, 112);
+    background: rgb(110, 156, 103);
 }
 
 .javier {
