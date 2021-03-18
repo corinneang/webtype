@@ -22,6 +22,10 @@
       -webkit-font-smoothing: antialiased;
   }
 
+  html {
+      scroll-behavior: smooth;
+  }
+
   body {
       background:rgb(247, 247, 247);
   }
@@ -97,10 +101,12 @@
   }
 
   button {
-      margin-bottom: 10px;
-      padding: 7px 7px 5px 7px;
-      border: 2px solid black;
-      z-index: -3;
+    border:none;
+    background: rgb(0,0,0,0);
+    padding: 0;
+    text-underline-offset: 0.2rem;
+      text-decoration-thickness: 2px;
+      color: black;
   }
 
 
@@ -115,13 +121,20 @@
     border-bottom: 1px solid black;
   }
 
-  .bottombar {
-    position: fixed;
-    bottom: 0;
+  .explorebar {
+    position: sticky;
+    top: 0;
     width: 100%;
     background:rgb(247, 247, 247);
-    border-bottom: none;
-    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.namebox {
+  margin-bottom: 10px;
+  padding: 7px 7px 5px 7px;
+  border: 2px solid black;
+  z-index: -3;
+  width: fit-content;
 }
 
   .below {
@@ -184,6 +197,10 @@
 
 .eventheader {
     font-variation-settings: "wght" 900;
+}
+
+.dates{
+    padding-top: 0;
 }
 
 .corinne {

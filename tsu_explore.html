@@ -33,7 +33,23 @@
  --> 
 
 <link rel="stylesheet" href="assets/style_tsu.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<style>
+    .draggable { 
+        padding: 0;
+        margin: 0;
+        cursor: move;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( ".draggable" ).draggable();
+} );
+</script>
 
 </head>  
 
@@ -50,53 +66,72 @@
         <h3>THE <span>SMALLEST</span> UNIT</h3>
         <div >
         </a>
-        <button class="event" style="display: block;">
+        <div class="event namebox" style="display: block;">
             HISTORIC EVENT
-        </button>
-        <button class="corinne" style="display: block;">
+        </div>
+        <div class="corinne namebox" style="display: block;">
             CORINNE ANG
-        </button>
-        <button class="javier" style="display: block;">
+        </div>
+        <div class="javier namebox" style="display: block;">
             JAVIER SYQUIA
-        </button>
+        </div>
     </header>
 
     <main>
-        <div class="contentbox corinne" style="top: 100px; left: 700px">
+    <div class="draggable" style="top: 100px; left: 800px">
+        <div class="contentbox corinne">
             <h1 class="stacking blackbckg">A TYPOGRAPHIC BARANGAY BY CORINNE</h1>
             <div>The environments around us are filled with stories. Our worlds and spaces built from smaller pieces of narratives & culture rooted in our memories. Abstract forms are charged with meaning alongside the utilitarian purposes they were created with.
                     <br><br>
                 Like the worlds around us letterforms are wrapped in layers of meaning. They act as one of our primary means of communication. However, this is not only done through the words that these letters make, but also their forms. Each letterform holds its own story and roots. Worlds and narratives push on the abstract structure of the letter to create its form. Alone letters can stand as cultural artifacts and vehicles for expression.
                 </div>
-                <div class="stacking eventheader">SEPT 2020 / PVD, RI, USA</div>
+                <div class="stacking eventheader dates">SEPT 2020 / PVD, RI, USA</div>
 
-                <a href="#"><div>EXHIBIT</div></a>
-                <div class="stacking eventheader">MARCH 2021 / PVD, RI, USA</div>
+                <button class="opener"><a href="#popup1"><div>TYPE DESIGN</div></a></button>
+                <div class="stacking eventheader dates">MARCH 2021 / PVD, RI, USA</div>
                 <a href="#"><div>TYPE DESIGN</div></a>
-                <div class="stacking eventheader">MARCH 2021 / PVD, RI, USA</div>
+                <div class="stacking eventheader dates">MARCH 2021 / PVD, RI, USA</div>
                 
 
             <div class="javier">if javi had any related thoughts he could write them here, each div is diary entry-esque</div>
         </div>
-        <div class="blackbox" style="top: 250px; left: 500px"></div>
+    </div>
 
-        <div class="contentbox javier" style="top: 400px; left: 100px">
-            <h1 class="stacking blackbckg">PERLAS NG SILINGANAN BY JAVIER</h1>
-            <a href="#"><div>MANIFESTO</div></a>
-            <div class="stacking eventheader">FEB 2021 / PVD, RI, USA</div>
-            <a href="#"><div>WORKSHOP</div></a>
-            <div class="stacking eventheader">MARCH 2021 / PVD, RI, USA</div>
-            <div>hllow</div>
+        <div class="contentbox draggable corinne dialog" style="top: 250px; left: 500px">
+            <a id="popup1"></a>
+            <img src="assets/texture.png">
         </div>
 
-        <div class="contentbox event" style="top: 900px; left: 400px">
+
+    <div class="blackbox" style="top: 250px; left: 500px"></div>
+
+    <div class="draggable" style="top: 400px; left: 200px">
+        <div class="contentbox javier">
+            <h1 class="stacking blackbckg">PERLAS NG SILINGANAN BY JAVIER</h1>
+            <a href="#"><div>MANIFESTO</div></a>
+            <div class="stacking eventheader dates">FEB 2021 / PVD, RI, USA</div>
+            <a href="#"><div>WORKSHOP</div></a>
+            <div class="stacking eventheader dates">MARCH 2021 / PVD, RI, USA</div>
+            <div>hllow</div>
+        </div>
+    </div>
+
+    <div class="draggable" style="top: 700px; left: 400px">
+        <div class="contentbox event">
             <div class="stacking eventheader blackbckg">COLONIAL PERIOD IN THE PHILIPPINES</div>
             <div class="stacking">hllow</div>
             <div class="stacking corinne">Within the Philippines, vernacular hand painted signs are a means of expression and have become a strong marker of the modern Filipino aesthetic. However, it is important to note that the latin language system was imposed as a means of enforcing power during the Spanish colonial rule. The jeepney that are adorned with these vernacular letterforms were introduced by the American army during their period of colonization. Beneath these letterforms that are deemed symbolic of the Filipino visual language lay systems and structures forced upon the Filipino people in moments when their voices were deemed as less valid. Despite this, the Filipino people have taken these structures of oppression and transformed them through their personal values, experiences and emotions into a vibrant vehicle of self expression.</div>
             <div class="javier">hllow</div>
         </div>
+    
 
     </main>
 
+    <script>
+        $( ".dialog" ).dialog({ autoOpen: false });
+        $( ".opener" ).click(function() {
+          $( ".dialog" ).dialog( "open" );
+        });
+        </script>
 
 </body>
