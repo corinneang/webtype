@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Fluoral_Swirl';
+    src:    url('Fluoral-Swirl.woff') format('woff'),
+            url('Fluoral-Swirl.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fluoral_Lattice';
+    src:    url('Fluoral-Lattice.woff') format('woff'),
+            url('Fluoral-Lattice.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

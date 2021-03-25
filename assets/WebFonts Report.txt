@@ -1,0 +1,68 @@
+Web Fonts:
+**********
+
+Fluoral-Swirl.ufo
+-----------------
+source: /Users/corinneang/Desktop/_work/barangay/fluoral/Fluoral-Swirl.ufo
+
+Build WOFF (TTF)
+''''''''''''''''
+    path: /Users/corinneang/Documents/githubrepos/webtype/assets/Fluoral-Swirl.woff
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        Built release mode font 'tmpxawnxt70.ttf' Revision 0.000
+        
+        --------------------
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/corinneang/Documents/githubrepos/webtype/assets/Fluoral-Swirl.woff2
+
+
+Fluoral-Lattice.ufo
+-------------------
+source: /Users/corinneang/Desktop/_work/barangay/fluoral/Fluoral-Lattice.ufo
+
+Build WOFF (TTF)
+''''''''''''''''
+    path: /Users/corinneang/Documents/githubrepos/webtype/assets/Fluoral-Lattice.woff
+    Source is a UFO file. Generate TTF.
+        --------------------
+        
+        makeotf Report
+        
+        makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+        makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+        makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+        Built release mode font 'tmpffdj75kp.ttf' Revision 0.001
+        
+        --------------------
+
+Build WOFF2 (TTF)
+'''''''''''''''''
+    path: /Users/corinneang/Documents/githubrepos/webtype/assets/Fluoral-Lattice.woff2
+
+
+
+TTFAutohint options:
+********************
+addTTFAutoHintInfo     = False
+dwClearType            = False
+fallbackScript         = False
+gdiClearType           = True
+grayScale              = False
+hintRangeMaximum       = 50
+hintRangeMinimum       = 8
+hintingLimit           = 200
+noHintingLimit         = False
+noXHeightIncreaseLimit = False
+overRideFontLicense    = False
+preHinting             = False
+symbolFont             = False
+xHeightIncreaseLimit   = 14
