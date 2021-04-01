@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.letter{
+    width: 400px;
+    background: rgb(133, 65, 211);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.segment.blank {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    background: none;
+    border: none;
+}
+
+.segment {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    background: black;
+}
+
+.round{
+    border-top-left-radius: 100%;
+}
+
+.round2 {
+    border-radius: 50%;
+}
+.segment:hover {
+    background: red;
+}
+
+.segment.blank:hover {
+    background: white;
+}
+
+.round:hover{
+ background: yellow;
+}
+
+.round2:hover{
+    background: blue;
+   }
