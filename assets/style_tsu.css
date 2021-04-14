@@ -268,6 +268,14 @@
     background: rgb(147, 107, 180);
 }
 
+.ethan {
+  background: rgb(236, 144, 23);
+}
+
+.amy {
+  background: rgb(241, 130, 222);
+}
+
 .modal {
   z-index: 10;
   transform: scale(0);
