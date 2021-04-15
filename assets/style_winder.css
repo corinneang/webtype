@@ -67,6 +67,19 @@
     border:rgb(249, 35, 35) solid 1px;
   }
 
+  button:hover {
+    background:rgb(32, 32, 32);
+  }
+
+  button:focus {
+    background:rgb(249, 35, 35);
+  }
+
+  .buttonholder {
+    margin: 1.5rem; 
+    display:inline-block;
+  }
+
 
   .winder {
       font-family: "winder-display";
@@ -145,6 +158,12 @@
 
   .north {
     background: rgb(255, 240, 34);
+}
+
+
+#fullcharset {
+  font-variation-settings: 'wght' var(--wght);
+  -webkit-font-smoothing: antialiased;
 }
 
 

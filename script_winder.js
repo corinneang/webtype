@@ -53,18 +53,15 @@ function closeModal(modal) {
 		});	
 	});
 
-	$('#thincomp').click(function(event) {
-		$("#content").css({
-			"--wdth": 40,
-			"--wght": 100,
-			"--XHGT": 0
+	$('#blocked').click(function(event) {
+		$("#fullcharset").css({
+			"--wght": 100
+
 		});	
 	});
 
-	$('#blackext').click(function(event) {
-		$("#content").css({
-			"--wdth": 150,
-			"--wght": 900,
-			"--XHGT": 0
+	$('#flowing').click(function(event) {
+		$("#fullcharset").css({
+			"--wght": 900
 		});	
 	});
