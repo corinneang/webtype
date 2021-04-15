@@ -107,6 +107,10 @@
     position: absolute;
   }
 
+  .topbox.up {
+    position:none;
+  }
+
   .grid {
     height:90vh; 
 
@@ -173,9 +177,6 @@
   background: rgb(74, 156, 92);
 }
 
-.east.light{
-  background:rgb(191, 238, 191)
-}
 
 .west {
   background: rgb(120, 176, 240);
