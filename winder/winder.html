@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- metadata -->
+        <meta name="title" content="Winder Display">
+        <meta name="description" content="a variable typeface focused on flow">
+
+    <title>Winder Display</title>
+
+        <!-- all the diff favicons favicon-generator
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+ --> 
+
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="script.js"></script>
+
+<style>
+  .draggable { 
+      padding: 0;
+      margin: 0;
+      cursor: move;
+  }
+</style>
+
+
+</head>  
+
+<body>
+<section class="home">
+  <div class="framing">
+    <div class="topbox">Welcome!<br>Rearrange this room to match your own to<br> see the flow of the world around you.</div>
+    <div>
+      <div style="height:59vh">
+        asdf
+      </div>
+    </div>
+    <div class="bottombox winder">winder variable</div>
+  </div>
+
+  <div class="justify" style="bottom: 0;">
+    <a class="south navbox">SOUTH</a>
+  </div>
+  
+</section>
+
+<section>
+  <div class="justify" style="top:0;">
+    <a data-modal-target="#modal1" class="north navbox">NORTH</a>
+  </div>
+
+  <div class="moving north modal" id="modal1">
+    <section class="north">
+      <div class="framing">
+        <div class="justify" contenteditable="true">
+          <h1>north room,<br>type to test.</h1>
+        </div>
+        <div class="bottombox justify">
+          alkjdfklj
+        </div>
+  
+      </div>
+    </section>
+
+    <div class="justify" style="top:0;">
+      <div class="north navbox">NORTH</div>
+    </div>
+    <div class="justify" style="bottom: 0;">
+      <a class="home navbox" data-close-button class="close-button" >HOME</a>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="moving south modal" id="modal2">
+    <section class="south">
+      <div class="framing">
+        <div class="justify" contenteditable="true">
+          <h1>north room,<br>type to test.</h1>
+        </div>
+        <div class="bottombox justify">
+          alkjdfklj
+        </div>
+  
+      </div>
+    </section>
+    <div class="justify" style="top: 0;">
+      <a class="home navbox" data-close-button class="close-button" >HOME</a>
+    </div>
+    <div class="justify" style="bottom:0;">
+      <div class="south navbox">SOUTH</div>
+    </div>
+
+  </div>
+
+  <div class="justify" style="bottom:0;">
+    <a data-modal-target="#modal2" class="south navbox">SOUTH</a>
+  </div>
+</section>
+    
+
+</body>
