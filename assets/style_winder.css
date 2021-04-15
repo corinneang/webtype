@@ -116,6 +116,15 @@
       grid-template-rows: 50% 50%; 
   }
 
+  .grid2 {
+    height:90vh; 
+
+    display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 50% 50%; 
+  }
+
   .typetest {
     color: var(--color);
     font-size: var(--size);
@@ -161,11 +170,15 @@
 }
 
 .east {
-  background: rgb(55, 147, 77);
+  background: rgb(74, 156, 92);
+}
+
+.east.light{
+  background:rgb(191, 238, 191)
 }
 
 .west {
-  background: rgb(99, 161, 234);
+  background: rgb(120, 176, 240);
 }
 
 .sidewest {
@@ -209,7 +222,15 @@
   .modal.south{
     transform: translateY(100vh);
   }
-  
+
+  .modal.east {
+    transform: translateX(100vw);
+  }
+
+  .modal.west {
+    transform: translateX(-100vw);
+  }  
+
   .modal.active {
     transform:translate(0,0);
   }
