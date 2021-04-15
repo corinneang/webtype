@@ -32,52 +32,79 @@
         <meta name="theme-color" content="#ffffff">
  --> 
 
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="winder/assets/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script defer src="script.js"></script>
-
-<style>
-  .draggable { 
-      padding: 0;
-      margin: 0;
-      cursor: move;
-  }
-</style>
+<script defer src="script_winder.js"></script>
+<script>
+  $( function() {
+    $( ".draggable" ).draggable();
+  } );
+</script>
 
 
 </head>  
 
 <body>
+
 <section class="home">
   <div class="framing">
-    <div class="topbox">Welcome!<br>Rearrange this room to match your own to<br> see the flow of the world around you.</div>
-    <div>
-      <div style="height:59vh">
-        asdf
-      </div>
+    <div class="topbox home">Welcome!<br>Rearrange this room to match your own and<br> see the flow of the world around you.</div>
+    <div style="position:absolute; top:50%; left:50%; transform: translate(-50%, -100%)">
+      <a class="home navbox tooltip">HOME  <span class="tooltiptext">YOU’RE HERE</span></a>
     </div>
-    <div class="bottombox winder">winder variable</div>
-  </div>
+    <div>
+      <div class="grid">
+        <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+        <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+        <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+        <div style="border-bottom: rgb(249, 35, 35) solid 1px;"></div>
+        <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
+        <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
+        <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
+        <div></div>
+        
+      </div>
 
-  <div class="justify" style="bottom: 0;">
-    <a class="south navbox">SOUTH</a>
+ 
+      
+    </div>
+    <div class="bottombox home winder">winder variable</div>
   </div>
   
 </section>
 
 <section>
   <div class="justify" style="top:0;">
-    <a data-modal-target="#modal1" class="north navbox">NORTH</a>
+    <a data-modal-target="#modal1" class="north navbox tooltip">NORTH   <span class="tooltiptext">TYPE TESTER</span></a>
   </div>
 
   <div class="moving north modal" id="modal1">
     <section class="north">
       <div class="framing">
         <div class="justify" contenteditable="true">
-          <h1>north room,<br>type to test.</h1>
+          <h1 id="tester" class="typetest">north room,<br>type to test.</h1>
         </div>
-        <div class="bottombox justify">
-          alkjdfklj
+        <div class="bottombox north justify">
+          <ul>                   
+            <li data-axes="wght">
+                <div class="range-name">FLOW</div>
+                <div class="min">100</div>
+                <input data-type="wght" class="range axis-range menu" type="range" min="100" max="900" value="100">
+                <div class="max">900</div>
+            </li> 
+            <li data-axes="size">
+                <div class="range-name">FONT SIZE</div>
+                <div class="min">8px</div>
+                <input data-type="size" class="range axis-range menu" type="range" min="8" max="200" value="150">
+                <div class="max">200px</div>
+            </li>   
+            <li data-axes="LHGT">
+                <div class="range-name">LINE HEIGHT</div>
+                <div class="min">0</div>
+                <input data-type="LHGT" class="range axis-range menu" type="range" min="0" max="5" value="1">
+                <div class="max">8</div>
+            </li>
+        </ul>
         </div>
   
       </div>
@@ -87,7 +114,7 @@
       <div class="north navbox">NORTH</div>
     </div>
     <div class="justify" style="bottom: 0;">
-      <a class="home navbox" data-close-button class="close-button" >HOME</a>
+      <a class="home navbox" data-close-button class="close-button">HOME</a>
     </div>
 
   </div>
@@ -97,11 +124,13 @@
   <div class="moving south modal" id="modal2">
     <section class="south">
       <div class="framing">
-        <div class="justify" contenteditable="true">
-          <h1>north room,<br>type to test.</h1>
+        <div class="justify" style="word-break: break-all; height: 80%;">
+          <h1 style="color:white; margin: 10vw; align-self:center;">
+          abcdefghijklmnopqrstuvwxyz .,!
+          </h1>
         </div>
-        <div class="bottombox justify">
-          alkjdfklj
+        <div class="bottombox south justify">
+          <div><button></button> BLOCKED   <button></button> FLOWING</div>
         </div>
   
       </div>

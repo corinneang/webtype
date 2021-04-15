@@ -26,3 +26,45 @@ function closeModal(modal) {
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+	//standard sliders
+	$('.axis-range').on('input', function(){
+
+		let value = parseInt($(this).val()); //get slider input value
+		// console.log(value);
+
+		const slidertype = $(this).data('type'); //get slider axis
+
+		// console.log("--"+slidertype, value );
+
+		$('#tester').css("--"+slidertype, value);
+
+	});
+
+
+
+    	//click buttons
+	$('#colorchange').click(function(event) {
+		// console.log('default clicked');
+		$("#content").css({
+			"--color": 1,
+			"--wght": 400,
+			"--XHGT": 0
+		});	
+	});
+
+	$('#thincomp').click(function(event) {
+		$("#content").css({
+			"--wdth": 40,
+			"--wght": 100,
+			"--XHGT": 0
+		});	
+	});
+
+	$('#blackext').click(function(event) {
+		$("#content").css({
+			"--wdth": 150,
+			"--wght": 900,
+			"--XHGT": 0
+		});	
+	});
