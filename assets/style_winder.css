@@ -10,7 +10,7 @@
   }
 
   html {
-    cursor: url("winder/assets/cursor.png"), auto !important;
+    cursor: url(images/cursor.png), auto !important;
   }
 
   :root {
@@ -105,10 +105,6 @@
     text-align: center;
     height: 5.5rem;
     position: absolute;
-  }
-
-  .topbox.up {
-    position:none;
   }
 
   .grid {
