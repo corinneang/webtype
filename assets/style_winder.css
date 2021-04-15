@@ -160,6 +160,29 @@
     background: rgb(255, 240, 34);
 }
 
+.east {
+  background: rgb(55, 147, 77);
+}
+
+.west {
+  background: rgb(99, 161, 234);
+}
+
+.sidewest {
+  top:50%; 
+  left: 0; 
+  position:absolute; 
+  transform: translate(-10%, -100%) rotate(-90deg);
+
+}
+
+.sideeast{
+  top:50%; 
+  right: 0; 
+  position:absolute; 
+  transform: translate(5%, -100%) rotate(90deg);
+}
+
 
 #fullcharset {
   font-variation-settings: 'wght' var(--wght);
