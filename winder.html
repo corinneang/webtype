@@ -35,10 +35,12 @@
 <link rel="stylesheet" href="assets/style_winder.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script defer src="script_winder.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
-  $( function() {
-    $( ".draggable" ).draggable();
-  } );
+$( function() {
+  $( ".draggable" ).draggable();
+} );
 </script>
 
 
@@ -49,6 +51,15 @@
 <section class="home">
   <div class="framing">
     <div class="topbox home">Welcome!<br>Rearrange this room to match your own and<br> see the flow of the world around you.</div>
+    <div class="draggable" style="top: 50%; left: 20%;">
+      <h1 class="dragcontent">window</h1>
+    </div>
+    <div class="draggable" style="top: 50%;left: 60%;">
+      <h1 class="dragcontent">bed</h1>
+    </div>
+
+
+
     <div style="position:absolute; top:50%; left:50%; transform: translate(-50%, -100%)">
       <a class="home navbox tooltip">HOME  <span class="tooltiptext">YOU’RE HERE</span></a>
     </div>

@@ -273,6 +273,17 @@ input.axis-range{
 	margin: 0 20px;
 }
 
+.draggable {
+  cursor: move;
+  overflow-y:hidden;
+  overflow-x:visible;
+  height: 10rem;
+  position: absolute;
+}
+.dragcontent {
+  transform: translate(0, -8rem);
+}
+
 
 /* Tooltip container */
 .tooltip {
