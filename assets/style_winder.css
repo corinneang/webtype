@@ -10,7 +10,7 @@
   }
 
   html {
-    cursor: url(images/cursor.png), auto !important;
+    cursor: url(images/cursor.svg), auto !important;
   }
 
   :root {
