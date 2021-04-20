@@ -20,7 +20,7 @@
 
 
     --wght: 100;
-    --size: 150px;
+    --FTSZ: 150px;
     --LHGT: 1;
   
     --color: rgb(32, 32, 32);
@@ -48,9 +48,9 @@
 
   h1 {
     font-family: "winder-display";
-    font-variation-settings: "wght" 100;
-    font-size: 9rem;
-    line-height: 8.5rem;
+    font-variation-settings: 'wght' var(--wght);
+    font-size: var(--FTSZ);
+    line-height: var(--LHGT);
     color:rgb(32, 32, 32);
     text-align: center;
   }
@@ -197,6 +197,7 @@
 #fullcharset {
   font-variation-settings: 'wght' var(--wght);
   -webkit-font-smoothing: antialiased;
+  transition: font-variation-settings 400ms ease-in-out;
 }
 
 
@@ -253,6 +254,15 @@ ul{
   justify-content: center;
   list-style-type: none;
 }
+
+li {padding-left:2rem;
+  padding-right:2rem;}
+
+.inarow {
+  display: flex;
+}
+
+
 #sliders ul{
 	margin: auto;
 }

@@ -56,7 +56,6 @@ function closeModal(modal) {
 	$('#blocked').click(function(event) {
 		$("#fullcharset").css({
 			"--wght": 100
-
 		});	
 	});
 

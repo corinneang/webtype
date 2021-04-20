@@ -33,10 +33,11 @@
  --> 
 
 <link rel="stylesheet" href="assets/style_winder.css">
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script defer src="script_winder.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
 $( function() {
   $( ".draggable" ).draggable();
@@ -99,21 +100,27 @@ $( function() {
           <ul>                   
             <li data-axes="wght">
                 <div class="range-name">FLOW</div>
-                <div class="min">100</div>
-                <input data-type="wght" class="range axis-range menu" type="range" min="100" max="900" value="100">
-                <div class="max">900</div>
+                <div class="inarow">
+                  <div class="min">100</div>
+                  <input data-type="wght" class="range axis-range menu" type="range" min="100" max="900" value="100">
+                  <div class="max">900</div>
+              </div>
             </li> 
             <li data-axes="size">
                 <div class="range-name">FONT SIZE</div>
-                <div class="min">8px</div>
-                <input data-type="size" class="range axis-range menu" type="range" min="8" max="200" value="150">
-                <div class="max">200px</div>
+                <div class="inarow">
+                  <div class="min">8px</div>
+                  <input data-type="size" class="range axis-range menu" type="range" min="8" max="200" value="150">
+                  <div class="max">200px</div>
+                </div>
             </li>   
             <li data-axes="LHGT">
                 <div class="range-name">LINE HEIGHT</div>
-                <div class="min">0</div>
-                <input data-type="LHGT" class="range axis-range menu" type="range" min="0" max="5" value="1">
-                <div class="max">8</div>
+                <div class="inarow">
+                  <div class="min">0</div>
+                  <input data-type="LHGT" class="range axis-range menu" type="range" min="0" max="25" value="1">
+                  <div class="max">8</div>
+                </div>
             </li>
         </ul>
         </div>
