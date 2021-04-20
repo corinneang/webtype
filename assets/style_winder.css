@@ -20,8 +20,8 @@
 
 
     --wght: 100;
-    --FTSZ: 150px;
-    --LHGT: 1;
+    /* --FTSZ: 150px;
+    --LHGT: 1; */
   
     --color: rgb(32, 32, 32);
     --background: rgb(255, 240, 34);
@@ -49,8 +49,10 @@
   h1 {
     font-family: "winder-display";
     font-variation-settings: 'wght' var(--wght);
-    font-size: var(--FTSZ);
-    line-height: var(--LHGT);
+    /* font-size: var(--FTSZ);
+    line-height: var(--LHGT); */
+    font-size: 150px;
+    line-height: 1.0;
     color:rgb(32, 32, 32);
     text-align: center;
   }
@@ -285,10 +287,7 @@ input.axis-range{
 
 .draggable {
   cursor: move;
-  overflow-y:hidden;
-  overflow-x:visible;
   height: 10rem;
-  position: absolute;
 }
 .dragcontent {
   transform: translate(0, -8rem);
