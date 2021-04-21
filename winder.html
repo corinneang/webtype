@@ -52,7 +52,7 @@ $( function() {
 <section class="home">
   <div class="framing">
     <div class="topbox home">Welcome!<br>Rearrange this room to match your own and<br> see the flow of the world around you.</div>
-    <div class="justify">
+    <div class="justify" style="transform:translateY(7%);">
       <h1><span class="draggable">door</span> <span class="draggable">table</span><br><span class="draggable">window</span> <span class="draggable">bed</span></h1>
     </div>
 
@@ -60,7 +60,7 @@ $( function() {
 
 
     <div style="position:absolute; top:50%; left:50%; transform: translate(-50%, -100%)">
-      <a class="home navbox tooltip">HOME  <span class="tooltiptext">YOU’RE HERE</span></a>
+      <a class="home navbox tooltip">BEDROOM <span class="tooltiptext">YOU’RE HERE</span></a>
     </div>
     <div>
       <div class="grid">
@@ -91,7 +91,10 @@ $( function() {
   <div class="moving north modal" id="modal1">
     <section class="north">
       <div class="framing">
-        <h1 contenteditable="true" id="tester" class="typetest">north room,<br>type to test.</h1>
+        <h1 contenteditable="true" id="tester" class="typetest"
+        autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          north room,<br>type to test<br>the taste.
+        </h1>
         <div class="bottombox home justify">
           <ul>                   
             <li data-axes="wght">
@@ -128,7 +131,7 @@ $( function() {
       <div class="north navbox">NORTH</div>
     </div>
     <div class="justify" style="bottom: 0;">
-      <a class="home navbox" data-close-button class="close-button">HOME</a>
+      <a class="home navbox" data-close-button class="close-button">BEDROOM</a>
     </div>
 
   </div>
@@ -139,7 +142,7 @@ $( function() {
     <section class="south">
       <div class="framing">
         <div class="justify" style="word-break: break-all; height: 80%;">
-          <h1 id="fullcharset" style="color:white; margin: 10vw; align-self:center;">
+          <h1 id="fullcharset" style="color:white; margin: 15vw; align-self:center;">
           abcdefghijklmnopqrstuvwxyz .,!
           </h1>
         </div>
@@ -151,7 +154,7 @@ $( function() {
       </div>
     </section>
     <div class="justify" style="top: 0;">
-      <a class="home navbox" data-close-button class="close-button" >HOME</a>
+      <a class="home navbox" data-close-button class="close-button" >BEDROOM</a>
     </div>
     <div class="justify" style="bottom:0;">
       <div class="south navbox">SOUTH</div>
@@ -169,37 +172,84 @@ $( function() {
   <div class="moving east modal" id="modal3">
     <section class="east">
       <div class="framing">
-        <div class="topbox home">Isn’t the outdoors refreshing? Go on a walk. <br>
-          See how where you place your body affects the<br>
-          flow of the space.</div>
+        <div id="garden" style="position: absolute; width: 100%;">
+          <div class="grid2" style="overflow: hidden;">
+            <div style="grid-area: 1 / 1 / 2 / 5;">
+          <h2 class="nature">mountain</h2>
+            </div>
+            <div style="grid-area: 4 / 1 / 5 / 5;">
+              <h2 class="nature">water</h2>
+            </div>
+
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+            <img src="assets/images/flower-01.svg">
+        </div>
+
+    
+        </div>
+  
         <div>
           <div class="grid2">
             <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
             <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
             <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
             <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
-            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>            
-            <div style="border-bottom: rgb(249, 35, 35) solid 1px;"></div>
+ 
+            <div class="east" style="grid-area: 1 / 5 / 5 / 7;"> 
+
+              <div class="justify east" style="width: 32%; height:100%;">            
+            <p style="align-self: center; text-align: center; padding: 30px;">
+              This is the garden. Isn’t the outdoors refreshing?
+              The wind is blowing and the currents are flowing. Go on a walk.
+              See how where you place your body affects the flow of space.
+            </p>
+  
+            </div>
+            </div>
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div> 
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+          
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>  
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+            <div style="border-bottom: rgb(249, 35, 35) solid 1px;border-right: rgb(249, 35, 35) solid 1px;"></div>
+           
+          
             <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
             <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
             <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
             <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
-            <div style="border-right: rgb(249, 35, 35) solid 1px;"></div>
-            <div></div>
+           
+
             
           </div>
     
      
-          
-        </div>
-        <div class="bottombox home"></div>
+ 
   
       </div>
     </section>
     
 
-    <div class="sidewest">
-      <a class="home navbox" data-close-button class="close-button" >HOME</a>
+    <div class="sidewest2">
+      <a class="home navbox" data-close-button class="close-button" >BEDROOM</a>
     </div>
     <div class="sideeast">
       <a class="east navbox">EAST</a>
@@ -219,15 +269,28 @@ $( function() {
   <div class="moving west modal" id="modal4">
     <section class="west">
       <div class="framing">
-  
+        <div class="grid2">
+ 
+          <div class="" style="grid-area: 1 / 1 / 5 / 2;"> 
+
+            <div class="justify" style="width: 32%; height:100%;">            
+          <p style="align-self: center; padding: 30px;">
+            Winder Display is a variable typeface that is loosely inspired
+            by the relationship between body and space in the concept of Feng Shui.
+          </p>
+
+          </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <div class="sidewest">
       <a class="west navbox">WEST</a>
     </div>
-    <div class="sideeast">
-      <a class="home navbox" data-close-button class="close-button" >HOME</a>
+    <div class="sideeast2">
+      <a class="home navbox" data-close-button class="close-button" >BEDROOM</a>
     </div>
 
   </div>

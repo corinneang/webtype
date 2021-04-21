@@ -49,13 +49,34 @@
   h1 {
     font-family: "winder-display";
     font-variation-settings: 'wght' var(--wght);
-    /* font-size: var(--FTSZ);
-    line-height: var(--LHGT); */
     font-size: 150px;
     line-height: 1.0;
     color:rgb(32, 32, 32);
     text-align: center;
+    -webkit-font-smoothing: antialiased;
   }
+
+  h2 {
+    font-family: "winder-display";
+    font-variation-settings: 'wght' var(--wght);
+    font-size: 150px;
+    line-height: 1.0;
+    color:rgb(32, 32, 32);
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+
+  img {
+    position: absolute;
+    height:5vw;
+    transition: transform 800ms ease-in-out;
+  }
+
+  img:hover {
+    transform: scale(1.75) rotate(360deg);
+  }
+
 
   [contenteditable]:focus {
     outline: 0px solid transparent;
@@ -119,12 +140,11 @@
   }
 
   .grid2 {
-    height:90vh; 
-
+    height: 93vh;
     display: grid;
 
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 50% 50%; 
+      grid-template-rows: 25% 25% 25% 25%; 
   }
 
   .typetest {
@@ -172,7 +192,7 @@
 }
 
 .east {
-  background: rgb(74, 156, 92);
+  background: rgb(97, 170, 97);
 }
 
 
@@ -188,11 +208,25 @@
 
 }
 
+.sidewest2 {
+  top:50%; 
+  left: 0; 
+  position:absolute; 
+  transform: translate(-25%, -100%) rotate(-90deg);
+
+}
+
 .sideeast{
   top:50%; 
   right: 0; 
   position:absolute; 
   transform: translate(5%, -100%) rotate(90deg);
+}
+.sideeast2{
+  top:50%; 
+  right: 0; 
+  position:absolute; 
+  transform: translate(25%, -100%) rotate(90deg);
 }
 
 
@@ -325,3 +359,43 @@ input.axis-range{
     background:rgb(249, 35, 35);
     color:rgb(255, 255, 255);
   }
+
+
+  input[type="range"] {
+    -webkit-appearance: none;
+   }
+   
+   input[type="range"]:focus {
+    outline: none;
+   }
+
+   input[type="range"]::-webkit-slider-runnable-track {
+    background: rgb(249, 35, 35);
+    height: 5px;
+    border-radius: 2.5px;
+   }
+   
+   input[type="range"]::-moz-range-track {
+    background: rgb(249, 35, 35);
+    height: 5px;
+    border-radius: 2.5px;
+   }
+
+   input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: rgb(249, 35, 35);
+    border: white solid 1px;
+    margin-top: -5px;
+    border-radius: 50%;
+   }
+   
+   input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background: rgb(249, 35, 35);
+    border: white solid 1px;
+    margin-top: -5px;
+    border-radius: 50%;
+   }
