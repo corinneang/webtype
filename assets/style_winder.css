@@ -178,6 +178,7 @@
     font-size: 1.5rem;
     width: 8rem;
   }
+  
 
   .home {
       background: white;
@@ -202,7 +203,7 @@
 
 .sidewest {
   top:50%; 
-  left: 0; 
+  left: -2%; 
   position:absolute; 
   transform: translate(-10%, -100%) rotate(-90deg);
 
@@ -218,7 +219,7 @@
 
 .sideeast{
   top:50%; 
-  right: 0; 
+  right: -2.5%; 
   position:absolute; 
   transform: translate(5%, -100%) rotate(90deg);
 }
@@ -277,6 +278,9 @@
     background:rgba(0, 0, 0, 0.25)
   }
 
+  a {
+    color:rgb(249, 35, 35);
+  }
 
 a:hover{
     background:rgb(249, 35, 35);
@@ -336,14 +340,15 @@ input.axis-range{
   
   /* Tooltip text */
   .tooltip .tooltiptext {
-    visibility: hidden;
-    background-color: white;
-    color:rgb(249, 35, 35);
+   visibility: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    color:rgba(249, 35, 35, 0);
     align-self: center;
     text-align: center;
     padding: 7px 7px 2px 7px;
-    border:rgb(249, 35, 35) solid 1px;
+    border:rgba(249, 35, 35, 0) solid 1px;
     font-size: 1.5rem;
+    transition: 750ms ease-in-out;
    
     /* Position the tooltip text - see examples below! */
     position: absolute;
@@ -353,7 +358,15 @@ input.axis-range{
   /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
     visibility: visible;
+    background-color: white;
+    color:rgb(249, 35, 35);
+    border:rgb(249, 35, 35) solid 1px;
   }
+
+  .tooltip.bottom .tooltiptext {
+    bottom: 60%;
+  }
+
 
 ::selection {
     background:rgb(249, 35, 35);
