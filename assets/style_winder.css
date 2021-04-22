@@ -67,6 +67,10 @@
     margin: 0;
   }
 
+  span {
+    font-variation-settings: 'wght' var(--wght);
+  }
+
   img {
     position: absolute;
     height:5vw;
@@ -149,8 +153,8 @@
 
   .typetest {
     font-variation-settings: 'wght' var(--wght);
-    margin:1rem;
-    height: calc(100% - 6.75rem);
+    margin:2rem;
+    height: calc(100% - 9rem);
     overflow-y: scroll;
   }
 

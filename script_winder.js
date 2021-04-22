@@ -3,6 +3,18 @@ const closeModalButtons = document.querySelectorAll('[data-close-button]')
 
 const wghtmax = 900;
 
+const furn1 = document.querySelector("span#furn1");
+const rect1 = furn1.getBoundingClientRect();
+
+const furn2 = document.querySelector("span#furn2");
+const rect2 = furn2.getBoundingClientRect();
+
+const furn3 = document.querySelector("span#furn3");
+const rect3 = furn3.getBoundingClientRect();
+
+const furn4 = document.querySelector("span#furn4");
+const rect4 = furn4.getBoundingClientRect();
+
 
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -56,6 +68,52 @@ function closeModal(modal) {
 
 	});
 
+//trying to get the coordinate values to match the interpolation values
+		let dragA = 1 - (rect1.left) / $(this).height();
+
+		let wghtA = Math.floor(dragA * wghtmax);
+
+console.log(wghtA)
+
+		$("#furn1").css({
+			"--wght": wghtA
+		});
+
+
+		let dragB = 1 - (rect2.right) / $(this).height();
+
+		let wghtB = Math.floor(dragB * wghtmax);
+
+console.log(wghtB)
+
+		$("#furn2").css({
+			"--wght": wghtB
+		});
+
+
+
+		let dragC = 1 - (rect3.bottom) / $(this).height();
+
+		let wghtC = Math.floor(dragC * wghtmax);
+
+console.log(wghtC)
+
+		$("#furn3").css({
+			"--wght": wghtC
+		});
+
+
+
+		let dragD = 1 - (rect4.bottom) / $(this).height();
+
+		let wghtD = Math.floor(dragC * wghtmax);
+
+console.log(wghtD)
+
+		$("#furn4").css({
+			"--wght": wghtD
+		});
+		
 
 
 	//mouseposition
@@ -98,8 +156,11 @@ console.log(settingY)
 		});	
 	});
 
+
+
 	// collect all the divs
 var divs = document.getElementsByTagName('img');
+
 // get window width and height
 var winWidth = window.innerWidth;
 var winHeight = window.innerHeight;

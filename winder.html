@@ -41,6 +41,15 @@
 <script>
 $( function() {
   $( ".draggable" ).draggable();
+  let dragA = 1 - (rect1.left) / $(this).height();
+
+let wghtA = Math.floor(dragA * wghtmax);
+
+console.log(wghtA)
+
+$("#furn1").css({
+  "--wght": wghtA
+});
 } );
 </script>
 
@@ -50,9 +59,12 @@ $( function() {
 <body>
 
 <section class="home">
-  <div class="framing">
+  <div id = "movement" class="framing">
     <div class="justify" style="transform:translateY(7%);">
-      <h1><span class="draggable">door</span> <span class="draggable">table</span><br><span class="draggable">window</span> <span class="draggable">bed</span></h1>
+      <h1><span id="furn1" class="draggable">door</span> 
+        <span id="furn2" class="draggable">table</span><br>
+        <span id="furn3" class="furn draggable">window</span> 
+        <span id="furn4" class="furn draggable">bed</span></h1>
     </div>
 
 
@@ -110,8 +122,8 @@ $( function() {
                 <div class="range-name">FONT SIZE</div>
                 <div class="inarow">
                   <div class="min">8px</div>
-                  <input id="size" data-type="size" class="range axis-range menu" type="range" min="8" max="200" value="150">
-                  <div class="max">200px</div>
+                  <input id="size" data-type="size" class="range axis-range menu" type="range" min="8" max="300" value="150">
+                  <div class="max">300px</div>
                 </div>
             </li>   
             <li data-axes="LHGT">
@@ -286,7 +298,7 @@ $( function() {
             in the process of being expanded. Winder interpolates between 2 styles, however
             more will be added in the future. It is currently just the lowercase.
             <br><br>
-            To test or use Winder shoot an email <a href="mailto:cang@risd.edu">here</a>.
+            To test or use Winder send an email <a href="mailto:cang@risd.edu">here</a>.
           </p>
 
           </div>
@@ -297,7 +309,7 @@ $( function() {
     </section>
 
     <div class="sidewest">
-      <a class="west navbox tooltip">WEST <span class="tooltiptext">CLOSET</span></a>
+      <a class="west navbox tooltip">WEST <span class="tooltiptext">LIBRARY</span></a>
     </div>
     <div class="sideeast">
       <a class="home navbox tooltip" data-close-button class="close-button" >BEDROOM <span class="tooltiptext">GO BACK</span></a>
@@ -307,7 +319,7 @@ $( function() {
 
 
   <div class="sidewest">
-    <a data-modal-target="#modal4" class="west navbox tooltip">WEST <span class="tooltiptext">CLOSET</span></a>
+    <a data-modal-target="#modal4" class="west navbox tooltip">WEST <span class="tooltiptext">LIBRARY</span></a>
   </div>
 </section>
 
