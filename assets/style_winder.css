@@ -49,21 +49,23 @@
   h1 {
     font-family: "winder-display";
     font-variation-settings: 'wght' var(--wght);
+    -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
     font-size: 150px;
     line-height: 1.0;
     color:rgb(32, 32, 32);
     text-align: center;
-    -webkit-font-smoothing: antialiased;
   }
 
   h2 {
     font-family: "winder-display";
     font-variation-settings: 'wght' var(--wght);
+    -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
     font-size: 150px;
     line-height: 1.0;
     color:rgb(32, 32, 32);
     text-align: center;
-    -webkit-font-smoothing: antialiased;
     margin: 0;
   }
 
@@ -74,6 +76,7 @@
     line-height: 1.0;
     color:rgb(32, 32, 32);
     text-align: center;
+    -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     transition: font-variation-settings 0.3s ease;
