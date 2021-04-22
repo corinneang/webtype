@@ -189,5 +189,15 @@ function getRandomNumber(min, max) {
 }
 
 
+var observer = new IntersectionObserver(function(entries, observer) {
+	entries.forEach(function(entry) {
+	  // Pause/Play the animation
+	  if (entry.isIntersecting) entry.target.style.animationPlayState = "running"
+	  else entry.target.style.animationPlayState = "paused"
+	});
+  });
+  
+  var variableTexts = document.querySelectorAll(".vf-animation");
+  variableTexts.forEach(function(el) { observer.observe(el); });
 
 

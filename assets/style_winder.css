@@ -67,8 +67,45 @@
     margin: 0;
   }
 
+  h3 {
+    font-family: "winder-display";
+    font-variation-settings: 'wght' var(--wght);
+    font-size: 300px;
+    line-height: 1.0;
+    color:rgb(32, 32, 32);
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    transition: font-variation-settings 0.3s ease;
+    animation-name: winder-animation;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes winder-animation {
+    from {
+      font-variation-settings: "wght" 100;
+    }
+    to {
+      font-variation-settings: "wght" 900;
+    }
+  }
+  
+
+
   span {
     font-variation-settings: 'wght' var(--wght);
+  }
+
+  marquee {
+    font-family: "winder-display";
+    font-variation-settings: 'wght' var(--wght);
+    font-size: 150px;
+    height: 100%;
+    line-height: 1.0;
+
   }
 
   img {
