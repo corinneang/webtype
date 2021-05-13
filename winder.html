@@ -39,18 +39,24 @@
 
 <script defer src="script_winder.js"></script>
 <script>
+
 $( function() {
-  $( ".draggable" ).draggable();
-  let dragA = 1 - (rect1.left) / $(this).height();
-
-let wghtA = Math.floor(dragA * wghtmax);
-
-console.log(wghtA)
-
-$("#furn1").css({
-  "--wght": wghtA
+  const windowwidth = $('.justify').width();
+  $( ".draggable" ).draggable({
+    drag: function( event, ui ) {
+      // let dragA = 1 - (rect1.left) / $(this).height();
+      let wghtA = Math.floor(ui.offset.left/windowwidth  * wghtmax);
+      // let wghtA = Math.floor(dragA * wghtmax);
+      // console.log(wghtA);
+      $(this).css({
+        "--wght": wghtA
+      });
+    }
 });
-} );
+
+
+   
+});
 </script>
 
 
@@ -144,7 +150,7 @@ $("#furn1").css({
       <div class="north navbox">NORTH</div>
     </div>
     <div class="justify" style="bottom: 0;">
-      <a class="home navbox bottom tooltip" data-close-button class="close-button" >BEDROOM <span class="tooltiptext">GO BACK</span></a>
+      <a class="home navbox bottom tooltip" data-close-button class="close-button">BEDROOM <span class="tooltiptext">GO BACK</span></a>
     </div>
 
   </div>
