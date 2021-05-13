@@ -107,6 +107,11 @@
     color:rgb(17, 17, 17);
   }
 
+  .present {
+    background: rgb(63, 129, 63);
+    color:rgb(17, 17, 17);
+  }
+
   ::selection {
     background:rgb(17, 17, 17);
     color:rgb(224, 213, 190);
